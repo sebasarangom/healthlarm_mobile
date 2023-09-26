@@ -8,4 +8,23 @@
     <string name="noHayAlarmas">No hay alarmas</string>
     <string name="noHayAlarmasHint">No hay alarmas</string>
     <string name="agregarAlarmaBtn">Agregar alarma</string>
+    <string name="tituloNuevaAlarma">Nueva alarma</string>
+    <string name="nombreAlarma">NOMBRE:</string>
+    <string name="nombreAlarmaEjemplo">Ejemplo: Advil Max</string>
+    <string name="dosisAlarma">DOSIS:</string>
+    <string name="dosisAlarmaEjemplo">Ejemplo: 400 mg</string>
+    <string name="fechaInicioAlarma">FECHA INICIO:</string>
+    <string name="fechaInicioAlarmaEjemplo">dd/mm/yyyy</string>
+    <string name="horaInicialAlarma">HORA INICIAL:</string>
+    <string name="horaInicialAlarmaEjemplo">Ejemplo: 02:00 PM</string>
+    <string name="categoriaAlarma">CATEGORÍA:</string>
+    <string name="categoriaAlarmaEjemplo">Ejemplos: Pastillas / Analgésicos</string>
+    <string name="medicamentosRestantesAlarma">MEDICAMENTOS RESTANTES:</string>
+    <string name="medicamentosRestantesAlarmaEjemplo">Número de medicamentos restantes</string>
+    <string name="recordatorioCompraAlarma">RECORDATORIO DE COMPRA:</string>
+    <string name="recordatorioCompraAlarmaEjemplo">Número de medicamentos para recompra</string>
+    <string name="guardarBtn">Guardar</string>
+    <string name="cancelarBtn">Cancelar</string>
+    <string name="nombrePeriodicidad">PERIODICIDAD:</string>
+    <string name="fechaFin">Fecha fin</string>
 </resources>

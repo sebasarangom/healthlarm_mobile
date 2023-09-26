@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imagenFondo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/fondoDescription"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/fondo" />
+
+    <ScrollView
+        android:id="@+id/pantallas"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/botones"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tituloNuevaAlarmaId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="96dp"
+                android:autofillHints="name"
+                android:fontFamily="@font/magra_regular"
+                android:gravity="center"
+                android:hint="@string/tituloAlarmasConfiguradasHint"
+                android:inputType="text"
+                android:text="@string/tituloNuevaAlarma"
+                android:textColor="@color/rojo100"
+                android:textSize="40sp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/nombreAlarmaId"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="48dp"
+                android:hint="@string/nombreAlarma"
+                app:boxStrokeColor="@color/negro100"
+                app:endIconMode="clear_text"
+                app:hintTextColor="@color/negro100"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tituloalarmasconfiguradas"
+                app:placeholderText="@string/nombreAlarmaEjemplo"
+                app:placeholderTextColor="@color/grisLogo">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/nombreAlarmaId2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/nombreAlarma"
+                    android:fontFamily="@font/magra_regular" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/dosisAlarmaId"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:hint="@string/dosisAlarma"
+                app:boxStrokeColor="@color/negro100"
+                app:endIconMode="clear_text"
+                app:hintTextColor="@color/negro100"
+                app:layout_constraintTop_toBottomOf="@+id/nombreAlarmaId"
+                app:placeholderText="@string/dosisAlarmaEjemplo"
+                app:placeholderTextColor="@color/grisLogo">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/dosisAlarmaId2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/dosisAlarma"
+                    android:fontFamily="@font/magra_regular" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <LinearLayout
+                android:id="@+id/textoSelectorId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/fechaInicioId"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:hint="@string/fechaInicioAlarma"
+                    app:boxStrokeColor="@color/negro100"
+                    app:endIconMode="clear_text"
+                    app:hintTextColor="@color/negro100"
+                    app:layout_constraintTop_toBottomOf="@+id/dosisAlarmaId"
+                    app:placeholderText="@string/fechaInicioAlarmaEjemplo"
+                    app:placeholderTextColor="@color/grisLogo">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/fechaInicioId2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/fechaInicioAlarma"
+                        android:fontFamily="@font/magra_regular" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <Switch
+                    android:id="@+id/fechaFinId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="48dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginRight="16dp"
+                    android:shadowColor="@color/rojo40"
+                    android:textColorHighlight="@color/rojo40"
+                    android:textColorLink="@color/rojo40"
+                    android:theme="@style/SCBSwitch" />
+
+                <TextView
+                    android:id="@+id/fechaFinTextId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="@font/magra_regular"
+                    android:text="@string/fechaFin" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/nombrePeriodicidadId"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginTop="16dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/magra_regular"
+                android:text="@string/nombrePeriodicidad"
+                android:textColor="@color/negro100" />
+
+            <SeekBar
+                android:id="@+id/periodicidadId"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:max="24"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp"
+                android:progressTint="@color/rojo40"
+                android:secondaryProgressTint="@color/rojo40"
+                android:thumbTint="@color/rojo40" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/horaInicialId"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:hint="@string/horaInicialAlarma"
+                app:boxStrokeColor="@color/negro100"
+                app:endIconMode="clear_text"
+                app:hintTextColor="@color/negro100"
+                app:layout_constraintTop_toBottomOf="@+id/fechaInicioId"
+                app:placeholderText="@string/horaInicialAlarmaEjemplo"
+                app:placeholderTextColor="@color/grisLogo">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/horaInicialId2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/horaInicialAlarma"
+                    android:fontFamily="@font/magra_regular" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/categoriaId"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:hint="@string/categoriaAlarma"
+                app:boxStrokeColor="@color/negro100"
+                app:endIconMode="clear_text"
+                app:hintTextColor="@color/negro100"
+                app:layout_constraintTop_toBottomOf="@+id/horaInicialId"
+                app:placeholderText="@string/categoriaAlarmaEjemplo"
+                app:placeholderTextColor="@color/grisLogo">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/categoriaId2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/categoriaAlarma"
+                    android:fontFamily="@font/magra_regular" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/medicamentosRestantesId"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:hint="@string/medicamentosRestantesAlarma"
+                app:boxStrokeColor="@color/negro100"
+                app:endIconMode="clear_text"
+                app:hintTextColor="@color/negro100"
+                app:layout_constraintTop_toBottomOf="@+id/categoriaId"
+                app:placeholderText="@string/medicamentosRestantesAlarmaEjemplo"
+                app:placeholderTextColor="@color/grisLogo">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/medicamentosRestantesId2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/medicamentosRestantesAlarma"
+                    android:fontFamily="@font/magra_regular" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/recordatorioCompraId"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="48dp"
+                android:hint="@string/recordatorioCompraAlarma"
+                app:boxStrokeColor="@color/negro100"
+                app:endIconMode="clear_text"
+                app:hintTextColor="@color/negro100"
+                app:layout_constraintTop_toBottomOf="@+id/medicamentosRestantesId"
+                app:placeholderText="@string/recordatorioCompraAlarmaEjemplo"
+                app:placeholderTextColor="@color/grisLogo">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/recordatorioCompraId2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/recordatorioCompraAlarma"
+                    android:fontFamily="@font/magra_regular" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/botones"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="64dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/guardarBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="48dp"
+            android:background="@drawable/formato_botones"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:text="@string/guardarBtn" />
+
+        <Button
+            android:id="@+id/cancelarBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/formato_botones"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:text="@string/cancelarBtn" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
