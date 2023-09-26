@@ -27,4 +27,5 @@
     <string name="cancelarBtn">Cancelar</string>
     <string name="nombrePeriodicidad">PERIODICIDAD:</string>
     <string name="fechaFin">Fecha fin</string>
+    <string name="horaAlarma">02:00 PM</string>
 </resources>
