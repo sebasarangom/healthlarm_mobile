@@ -3,4 +3,9 @@
     <string name="logoDescription">Imagen del logo</string>
     <string name="fondoDescription">Imagen del fondo</string>
     <string name="iniciarBtn">Iniciar</string>
+    <string name="tituloAlarmasConfiguradas">Alarmas configuradas</string>
+    <string name="tituloAlarmasConfiguradasHint">Alarmas configuradas</string>
+    <string name="noHayAlarmas">No hay alarmas</string>
+    <string name="noHayAlarmasHint">No hay alarmas</string>
+    <string name="agregarAlarmaBtn">Agregar alarma</string>
 </resources>
