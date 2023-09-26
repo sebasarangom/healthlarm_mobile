@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Healthlarm</string>
+    <string name="logoDescription">Imagen del logo</string>
+    <string name="fondoDescription">Imagen del fondo</string>
+    <string name="iniciarBtn">Iniciar</string>
+</resources>

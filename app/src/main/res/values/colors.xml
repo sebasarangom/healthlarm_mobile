@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="negro100">#000000</color>
+    <color name="blanco">#FFFFFF</color>
+    <color name="rojo100">#770C10</color>
+    <color name="rojo80">#E82B32</color>
+    <color name="rojo60">#F48B93</color>
+    <color name="rojo40">#CCB8B9</color>
+    <color name="rojo20">#929292</color>
+    <color name="grisLogo">#CCCCCC</color>
+</resources>
