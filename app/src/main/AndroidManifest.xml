@@ -21,6 +21,10 @@
             </intent-filter>
 
         </activity>
+        <activity android:name=".AgregarActivity" />
+        <activity android:name=".NuevaAlarmaActivity" />
+        <activity android:name=".AlarmasActivity" />
+        <activity android:name=".EliminarActivity" />
     </application>
 
 </manifest>
