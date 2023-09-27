@@ -12,7 +12,7 @@ class AlarmasActivity : ComponentActivity() {
 
         val getEditarButton: ImageButton = findViewById(R.id.editarId)
         getEditarButton.setOnClickListener {
-            val editar = Intent(this, NuevaAlarmaActivity::class.java)
+            val editar = Intent(this, EditarAlarmaActivity::class.java)
             startActivity(editar)
         }
 
@@ -20,6 +20,12 @@ class AlarmasActivity : ComponentActivity() {
         getEliminarButton.setOnClickListener {
             val eliminar = Intent(this, EliminarActivity::class.java)
             startActivity(eliminar)
+        }
+
+        val getAgregarButton: ImageButton = findViewById(R.id.agregarAlarmaBtn)
+        getAgregarButton.setOnClickListener {
+            val nueva = Intent(this, NuevaAlarmaActivity::class.java)
+            startActivity(nueva)
         }
     }
 }

@@ -9,6 +9,7 @@
     <string name="noHayAlarmasHint">No hay alarmas</string>
     <string name="agregarAlarmaBtn">Agregar alarma</string>
     <string name="tituloNuevaAlarma">Nueva alarma</string>
+    <string name="tituloEditarAlarma">Editar alarma</string>
     <string name="nombreAlarma">NOMBRE:</string>
     <string name="nombreAlarmaEjemplo">Ejemplo: Advil Max</string>
     <string name="dosisAlarma">DOSIS:</string>
@@ -32,4 +33,5 @@
     <string name="noBtn">No</string>
     <string name="deleteMensaje">¿Está seguro de que quiere eliminar la alarma de Acetaminofén a las 08:00 AM?</string>
     <string name="deleteTitulo">ELIMINAR ALARMA</string>
+    <string name="editarBtn">Editar</string>
 </resources>
