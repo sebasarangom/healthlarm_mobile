@@ -28,4 +28,8 @@
     <string name="nombrePeriodicidad">PERIODICIDAD:</string>
     <string name="fechaFin">Fecha fin</string>
     <string name="horaAlarma">02:00 PM</string>
+    <string name="siBtn">Si</string>
+    <string name="noBtn">No</string>
+    <string name="deleteMensaje">¿Está seguro de que quiere eliminar la alarma de Acetaminofén a las 08:00 AM?</string>
+    <string name="deleteTitulo">ELIMINAR ALARMA</string>
 </resources>

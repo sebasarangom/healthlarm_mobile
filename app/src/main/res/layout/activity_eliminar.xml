@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/completaPantalla"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/fondoAlarmasConfig"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/fondoDescription"
+            android:scaleType="centerCrop"
+            android:src="@drawable/fondo"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cuadroId"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="320dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="320dp"
+            android:background="@drawable/formato_cuadro_eliminar"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:id="@+id/linearMensajeId"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toTopOf="@id/linearBotonesId"
+                app:layout_constraintEnd_toEndOf="@id/cuadroId"
+                app:layout_constraintStart_toStartOf="@id/cuadroId"
+                app:layout_constraintTop_toTopOf="@id/cuadroId">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/magra_regular"
+                    android:paddingStart="40dp"
+                    android:paddingTop="40dp"
+                    android:text="@string/deleteTitulo"
+                    android:textColor="@color/negro100" />
+
+                <TextView
+                    android:id="@+id/eliminarMensajeId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/magra_regular"
+                    android:gravity="center"
+                    android:paddingTop="20dp"
+                    android:text="@string/deleteMensaje"
+                    android:textColor="@color/negro100" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearBotonesId"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:gravity="bottom|end"
+                android:orientation="horizontal"
+                android:paddingEnd="20dp"
+                app:layout_constraintBottom_toBottomOf="@id/cuadroId"
+                app:layout_constraintEnd_toEndOf="@id/cuadroId"
+                app:layout_constraintStart_toStartOf="@id/cuadroId">
+
+                <Button
+                    android:id="@+id/siBtn"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/magra_regular"
+                    android:text="@string/siBtn"
+                    android:textColor="@color/negro100" />
+
+                <Button
+                    android:id="@+id/noBtn"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/magra_regular"
+                    android:text="@string/noBtn"
+                    android:textColor="@color/negro100" />
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
